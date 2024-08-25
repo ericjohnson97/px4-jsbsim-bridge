@@ -90,6 +90,7 @@ JSBSimBridge::JSBSimBridge(JSBSim::FGFDMExec *fdmexec, ConfigurationParser &cfg)
   _actuators->SetActuatorConfigs(config);
 
   _realtime_factor = _cfg.getRealtimeFactor();
+  _fdmexec->ResetToInitialConditions(0);
 }
 
 JSBSimBridge::~JSBSimBridge() {}
