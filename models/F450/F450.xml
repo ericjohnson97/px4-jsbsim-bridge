@@ -1,0 +1,46 @@
+<?xml version="1.0" ?>
+
+<fdm_config release="Alpha" version="3.0">
+
+    <metrics file="Metrics.xml"/>
+
+    <mass_balance file="Mass.xml"/>
+
+    <ground_reactions file="Gear.xml"/>
+
+    <propulsion file="Propulsion.xml"/>
+
+    <aerodynamics file="Aero.xml"/>
+
+    <system file="Effectors.xml"/>
+
+    <system file="px4_default_imu_sensor"/>
+    <system file="px4_default_gps_sensor"/>
+    <system file="px4_default_baro_sensor"/>
+
+    <output name="JSBout172B.csv" type="CSV" rate="0.1">
+      <rates> ON             </rates>
+      <velocities> ON        </velocities>
+      <position> ON          </position>
+      <atmosphere> ON       </atmosphere>
+      <fcs> OFF               </fcs>
+      <ground_reactions> ON </ground_reactions>
+      <propulsion> ON       </propulsion>
+      <simulation> ON        </simulation>
+      <massprops> ON        </massprops>
+      <forces> ON           </forces>
+      <moments> ON          </moments>
+      <aerosurfaces> ON      </aerosurfaces>
+      <property> position/vrp-gc-latitude_deg </property>
+      <property> position/vrp-longitude_deg   </property>
+      <property> position/vrp-radius-ft       </property>
+    </output>
+
+  <!-- <flight_control file="FlightControl.xml"/> -->
+
+    <!-- <system file="SensorImu.xml"/>
+    <system file="SensorBaro.xml"/>
+    <system file="SensorGps.xml"/> -->
+
+</fdm_config>
+

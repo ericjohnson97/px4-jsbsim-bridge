@@ -54,7 +54,7 @@ This is a generic JSBSim system file to simulate the GPS behavior for PX4.
         <sensor name="px4/gps-alt">
             <input>position/h-sl-meters</input>
             <lag> 0 </lag>
-            <noise variation="ABSOLUTE" distribution="GAUSSIAN"> 0.3 </noise>
+            <noise variation="ABSOLUTE" distribution="GAUSSIAN"> 0.0 </noise>
             <!--Adjust as required
             <quantization name="name">
                 <bits> number </bits>
@@ -145,7 +145,7 @@ This is a generic JSBSim system file to simulate the GPS behavior for PX4.
         <sensor name="px4/gps-v-down">
             <input>velocities/v-down-fps</input>
             <lag> 0 </lag>
-            <noise variation="ABSOLUTE" distribution="GAUSSIAN"> 0.05 </noise>
+            <noise variation="ABSOLUTE" distribution="GAUSSIAN"> 0.0 </noise>
             <!--Adjust as required
             <quantization name="name">
                 <bits> number </bits>
